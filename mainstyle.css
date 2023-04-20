@@ -1,9 +1,85 @@
-body{
+body {
     background-color: #EFF1FA;
     color: #052051;
     font-family: 'Montserrat', sans-serif;
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
 
-header{
+@media (max-width: 767px) {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+header {
     padding: 2em 2em 2em 1em;
+}
+
+.boton {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 80%;
+}
+
+.encriptar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    color: white;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.desencriptar {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.copiar{
+    box-sizing: border-box;
+justify-content: center;
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+position: absolute;
+width: 336px;
+height: 67px;
+left: 1032px;
+top: 80%;
+background-color: white;
+color:#0A3871;
+border: 1px solid #0A3871;
+border-radius: 24px;
 }
