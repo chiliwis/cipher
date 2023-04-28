@@ -20,11 +20,18 @@
 
     </header>
     <div>
-        <textarea name="mensaje" id="mensaje" cols="50%" rows="10">Ingrese el texto aquí</textarea>
-
+        <textarea name="mensaje" id="mensaje" cols="50%" rows="10" class="mensaje">Ingrese el texto aquí</textarea>
+        <p class="minusculas">
+            <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon><svg xmlns="http://www.w3.org/2000/svg"
+                width="16" height="20" viewBox="0 0 16 10" class="icon">
+                <path fill="currentColor"
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2z" />
+            </svg>
+            Solo letras minusculas y sin acentos
+        </p>
     </div>
     <div>
-        <textarea name="resultado" id="resultado" cols="50%" rows="10"></textarea>
+        <textarea name="resultado" id="resultado" cols="50%" rows="10" class="resultado"></textarea>
         <button class="copiar">Copiar</button>
     </div>
     <div class="boton">
@@ -36,7 +43,8 @@
 </body>
 
 <footer class="rodapie">
-    <h5> © 2023 CIPHER. Desarrollado por: </h5> <span class="desarrollador"></span> <a href="https://github.com/chiliwis"> https://github.com/chiliwis</a>
+    <h5> © 2023 CIPHER. Desarrollado por: </h5> <span class="desarrollador"></span> <a
+        href="https://github.com/chiliwis"> https://github.com/chiliwis</a>
 </footer>
 
 </html>
