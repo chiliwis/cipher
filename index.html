@@ -13,6 +13,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     </style>
+    <script type="text/javascript" src="/index.js"></script>
     <title>CIPHER</title>
 </head>
 
@@ -32,9 +33,15 @@
                     </svg>
                     Solo letras minusculas y sin acentos
                 </h6>
-                <button class="encriptar">Encriptar</button>
-                <button class="desencriptar">Desencriptar</button>
+                <button class="encriptar" id="botonencriptar">Encriptar</button>
+                <button class="desencriptar" id="botondesencriptar">Desencriptar</button>
             </div>
+            <script>
+                var btn = document.querySelector("#botonencriptar");
+                btn.onclick = encriptar;
+                var btn = document.querySelector("#botondesencriptar");
+                btn.onclick = desencriptar;
+            </script>
         </section>
         <section>
             <div>
