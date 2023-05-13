@@ -13,6 +13,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
     </style>
+   <link rel="stylesheet" href="/estilos.css">
     <script type="text/javascript" src="/index.js"></script>
     <title>CIPHER</title>
 </head>
@@ -23,7 +24,7 @@
     </header>
     <main>
         <section>
-            <textarea name="mensaje" id="mensaje" cols="50%" rows="10" class="mensaje">Ingrese el texto aquí</textarea>
+            <textarea name="mensaje" id="mensaje" cols="50%" rows="10" class="mensaje" placeholder="Ingrese el texto aquí"></textarea>
             <div class="boton">
                 <h6>
                     <iconify-icon icon="bi:exclamation-circle-fill"></iconify-icon><svg
@@ -41,20 +42,25 @@
                 btn.onclick = encriptar;
                 var btn2 = document.querySelector("#botondesencriptar");
                 btn2.onclick = desencriptar;
+
             </script>
         </section>
         <section>
             <div>
                 <textarea name="resultado" id="resultado" cols="50%" rows="10" class="resultado"></textarea>
-                <button class="copiar">Copiar</button>
+                <button class="copiar" id="botoncopiar">Copiar</button>
             </div>
+            <script>
+                var btn3 = document.querySelector("#botoncopiar");
+                btn3.onclick = copiar;
+            </script>
         </section>
     </main>
 </body>
 <footer class="rodapie">
-    
-        <h5> © 2023 CIPHER. Desarrollado por: </h5> <span class="desarrollador"></span> <a
-            href="https://github.com/chiliwis"> https://github.com/chiliwis</a>
+
+    <h5> © 2023 CIPHER. Desarrollado por: </h5> <span class="desarrollador"></span> <a
+        href="https://github.com/chiliwis"> https://github.com/chiliwis</a>
 
 </footer>
 

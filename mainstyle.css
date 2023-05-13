@@ -25,6 +25,8 @@ main {
     margin-left: 80px;
 }
 
+
+
 @media (max-width: 767px) {
     .container {
         grid-template-columns: repeat(2, 1fr);
@@ -106,7 +108,7 @@ font-size: 18px;
     /* White */
 
     background: #FFFFFF;
-    background-image: url(/imagenes/Muñeco.png);
+    
     background-repeat: no-repeat;
     border: none;
     /* shadow */
@@ -116,7 +118,12 @@ font-size: 18px;
     margin-left: 98px;
     margin-top: 20px;
     padding-left: 20px;
-    position: fixed;
+    /* position: fixed; */
+    background-image: url(/imagenes/Muñeco.png);
+}
+
+.resultado.sin-muneco{
+    background-image: none;
 }
 
 .icono {
@@ -225,4 +232,8 @@ font-size: 18px;
     color: whitesmoke;
     margin-left: 10px;
 
+}
+
+#botoncopiar{
+    display: none;
 }
